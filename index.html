@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="big-container">
+      <div class="container" id="container">
+        <div class="calculator-line">
+          <button class="btn btn-dark" id="seven" onclick="addToDisplay(this)">
+            7
+          </button>
+          <button class="btn btn-dark" id="eight" onclick="addToDisplay(this)">
+            8
+          </button>
+          <button
+            class="btn btn-dark"
+            id="nine"
+            value="9"
+            onclick="addToDisplay(this)"
+          >
+            9
+          </button>
+          <button
+            class="btn btn-success"
+            id="division"
+            onclick="addToDisplay(this)"
+          >
+            /
+          </button>
+        </div>
+        <div class="calculator-line">
+          <button class="btn btn-dark" id="four" onclick="addToDisplay(this)">
+            4
+          </button>
+          <button class="btn btn-dark" id="five" onclick="addToDisplay(this)">
+            5
+          </button>
+          <button class="btn btn-dark" id="six" onclick="addToDisplay(this)">
+            6
+          </button>
+          <button
+            class="btn btn-success"
+            id="multiply"
+            onclick="addToDisplay(this)"
+          >
+            *
+          </button>
+        </div>
+        <div class="calculator-line">
+          <button class="btn btn-dark" id="one" onclick="addToDisplay(this)">
+            1
+          </button>
+          <button class="btn btn-dark" id="two" onclick="addToDisplay(this)">
+            2
+          </button>
+          <button class="btn btn-dark" id="three" onclick="addToDisplay(this)">
+            3
+          </button>
+          <button
+            class="btn btn-success"
+            id="minus"
+            onclick="addToDisplay(this)"
+          >
+            -
+          </button>
+        </div>
+        <div class="calculator-line">
+          <button class="btn btn-dark" id="zero" onclick="addToDisplay(this)">
+            0
+          </button>
+          <button class="btn btn-success" id="dot" onclick="addToDisplay(this)">
+            .
+          </button>
+          <button
+            class="btn btn-success"
+            id="plus"
+            onclick="addToDisplay(this)"
+          >
+            +
+          </button>
+          <button
+            class="btn btn-primary"
+            id="equal"
+            onclick="calculate(display.join(''))"
+          >
+            =
+          </button>
+        </div>
+      </div>
+      <div class="row align-center" id="screen"><span>0</span></div>
+      <div id="cleanButton">
+        <button
+          class="container btn btn-danger"
+          id="cleanUpButton"
+          onclick="clean()"
+        >
+          A/C
+        </button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

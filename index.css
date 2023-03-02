@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+* {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  font-size: 40px;
+  background-image: url('Wcb9t8.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#big-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+
+#container {
+  /* border-radius: 15px; */
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding: 25px;
+  /* border: 1px solid black; */
+}
+
+.calculator-line > button {
+  width: 70px;
+  height: 70px;
+  background-color: brown;
+  font-size: 0.75em;
+  padding: 20px;
+  margin: 8px;
+  border-radius: 5px;
+}
+
+#screen {
+  background-color: rgba(255, 99, 71, 0.507);
+  text-align: center;
+  width: 400px;
+  margin-top: 25px;
+  font-weight: 900;
+  border-style: inset;
+}
+
+#cleanUpButton {
+  margin-top: 5px;
+  padding: 15px;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(27, 93, 171, 1) 100%
+  );
+}
+
+@media only screen and (max-width: 550px) {
+  #big-container {
+    margin-top: 0;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  #screen {
+    width: auto;
+  }
+}
